@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bka_galatia/bak_backend/bak_backend.iml" filepath="$PROJECT_DIR$/bka_galatia/bak_backend/bak_backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bka_galatia/bka_api/bka_api.iml" filepath="$PROJECT_DIR$/bka_galatia/bka_api/bka_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bka_galatia/bka_common/bka_common.iml" filepath="$PROJECT_DIR$/bka_galatia/bka_common/bka_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bka_galatia/bka_galatia.iml" filepath="$PROJECT_DIR$/bka_galatia/bka_galatia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bka_galatia/bka_service_provider/bka_service_provider.iml" filepath="$PROJECT_DIR$/bka_galatia/bka_service_provider/bka_service_provider.iml" />
+    </modules>
+  </component>
+</project>

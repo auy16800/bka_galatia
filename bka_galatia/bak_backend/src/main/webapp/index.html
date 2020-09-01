@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脑瓜蹦assosiation</title>
+    <link rel="stylesheet" href="./css/umika_main.css">
+    <script src="js/vue.js"></script>
+    <script src="js/axios-0.18.0.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- 后期换成vue/axios/jq  v2.5.16版本min -->
+
+
+
+
+
+ <div id="app">
+
+    
+    <div>
+
+    <button @click = 'testClick'>测试用例</button>
+
+
+        <p>{{ testArray }}</p>
+        <p v-for="item in testArray">{{ item }}</p>
+        <p v-for="(item,i) in testArray"> 索引值:{{ i }}  --- 每一项:{{ item }}</p>
+
+        <span>{{testArray[1]}}  ??????</span>
+
+
+
+
+    </div>
+
+
+    <div class="days-canlendar">
+        内部，日历与说明，暂时没有内容
+    </div>
+
+    <div class="right-news">
+        右侧边框。显示更新日志与说明
+    </div>
+
+
+
+</div>
+      <script>
+            var vm = new Vue({
+                
+                el:"#app",
+                data:{
+                    testArray:[],
+                },
+                methods: {
+                    testClick(){
+                        axios.post("/mainMenu/test.do").then((result)=>{
+
+                            this.this.testArray =  result;
+
+
+                        }).finally(()=>{
+                            alert("调用失败")
+                        })
+                    }
+                },
+
+            })
+
+            
+    </script>
+
+</body>
+</html>
